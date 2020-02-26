@@ -118,6 +118,8 @@ def movies_with_directors_set(source)
   index = 0
   while index < source.count do
     movies_aoa[index] = movies_with_director_key(source[index][:name], source[index][:movies])
+    
+    index += 1
   end
   
   return movies_aoa
